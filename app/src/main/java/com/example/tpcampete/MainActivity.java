@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         int option = item.getItemId();
         switch (option){
             case R.id.program:
-                Toast.makeText(MainActivity.this, "to activity program", Toast.LENGTH_LONG).show();
+//                Toast.makeText(MainActivity.this, "to activity program", Toast.LENGTH_LONG).show();
                 programIntent = new Intent(MainActivity.this, ProgramActivity.class);
                 startActivity(programIntent);
                 break;
