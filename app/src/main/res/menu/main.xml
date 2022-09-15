@@ -6,17 +6,20 @@
         android:id="@+id/program"
         android:icon="@drawable/program"
         android:title="Program"
-        app:showAsAction="always" />
+        android:titleCondensed="PRO"
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/infomation"
         android:icon="@drawable/favicon"
         android:title="Infomation"
+        android:titleCondensed="INF"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/registration"
         android:icon="@drawable/inscription"
         android:title="Registration"
-        app:showAsAction="always" />
+        android:titleCondensed="REG"
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/help"
         android:icon="@drawable/help"

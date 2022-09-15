@@ -24,11 +24,13 @@ public class ProgramActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    // ajouter top menu
     public void onFloatRetour(){
         returnIntent = new Intent(ProgramActivity.this, MainActivity.class);
         startActivity(returnIntent);
     }
 
+    // action pour les options du top menu
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int option = item.getItemId();

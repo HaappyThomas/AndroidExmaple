@@ -18,12 +18,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    // ajouter top menu
     @Override
     public boolean onCreateOptionsMenu(@NonNull Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
+    // action pour les options du top menu
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int option = item.getItemId();
@@ -34,17 +36,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(programIntent);
                 break;
             case R.id.registration:
-                Toast.makeText(MainActivity.this, "to activity registration", Toast.LENGTH_LONG).show();
+//                Toast.makeText(MainActivity.this, "to activity registration", Toast.LENGTH_LONG).show();
                 registrationIntent= new Intent(MainActivity.this, RegistrationActivity.class);
                 startActivity(registrationIntent);
                 break;
             case R.id.infomation:
-                Toast.makeText(MainActivity.this, "to activity info", Toast.LENGTH_LONG).show();
+//                Toast.makeText(MainActivity.this, "to activity info", Toast.LENGTH_LONG).show();
                 infomationIntent = new Intent(MainActivity.this, InformationActivity.class);
                 startActivity(infomationIntent);
                 break;
             case R.id.help:
-                Toast.makeText(MainActivity.this, "to activity help", Toast.LENGTH_LONG).show();
+//                Toast.makeText(MainActivity.this, "to activity help", Toast.LENGTH_LONG).show();
                 helpIntent = new Intent(MainActivity.this, HelpActivity.class);
                 startActivity(helpIntent);
                 break;
