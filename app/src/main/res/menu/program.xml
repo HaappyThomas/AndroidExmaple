@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/minitigre"
+        android:icon="@drawable/tiger"
+        android:title="MiniTigres 4-5 ans"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/science"
+        android:icon="@drawable/sciences"
+        android:title="Science"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/artist"
+        android:title="Budding artists"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/fermier"
+        android:icon="@drawable/fermier"
+        android:title="Urban farmer"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/dance"
+        android:icon="@drawable/dance"
+        android:title="Danse"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/artistCirque"
+        android:icon="@drawable/cirque"
+        android:title="Circus performer"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/comicStrip"
+        android:icon="@drawable/dessin"
+        android:title="Comic strip"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/music"
+        android:icon="@drawable/music"
+        android:title="Music"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/sport"
+        android:icon="@drawable/sport"
+        android:title="Sport" />
+    <item
+        android:id="@+id/retour"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:title="Return"
+        app:showAsAction="always" />
+</menu>

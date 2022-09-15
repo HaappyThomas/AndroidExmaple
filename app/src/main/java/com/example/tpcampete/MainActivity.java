@@ -3,12 +3,14 @@ package com.example.tpcampete;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    private Intent programIntent, infomationIntent, registrationIntent, helpIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,15 +30,23 @@ public class MainActivity extends AppCompatActivity {
         switch (option){
             case R.id.program:
                 Toast.makeText(MainActivity.this, "to activity program", Toast.LENGTH_LONG).show();
+                programIntent = new Intent(MainActivity.this, ProgramActivity.class);
+                startActivity(programIntent);
                 break;
             case R.id.registration:
                 Toast.makeText(MainActivity.this, "to activity registration", Toast.LENGTH_LONG).show();
+                registrationIntent= new Intent(MainActivity.this, RegistrationActivity.class);
+                startActivity(registrationIntent);
                 break;
-            case R.id.info:
+            case R.id.infomation:
                 Toast.makeText(MainActivity.this, "to activity info", Toast.LENGTH_LONG).show();
+                infomationIntent = new Intent(MainActivity.this, InformationActivity.class);
+                startActivity(infomationIntent);
                 break;
             case R.id.help:
                 Toast.makeText(MainActivity.this, "to activity help", Toast.LENGTH_LONG).show();
+                helpIntent = new Intent(MainActivity.this, HelpActivity.class);
+                startActivity(helpIntent);
                 break;
         }
         return super.onOptionsItemSelected(item);

@@ -8,7 +8,7 @@
         android:title="Program"
         app:showAsAction="always" />
     <item
-        android:id="@+id/info"
+        android:id="@+id/infomation"
         android:icon="@drawable/favicon"
         android:title="Infomation"
         app:showAsAction="ifRoom" />
