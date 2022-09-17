@@ -6,6 +6,70 @@
     android:layout_height="match_parent"
     tools:context=".RegistrationActivity">
 
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+        <RadioButton
+            android:id="@+id/radioButtonMiniTiger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MiniTigres 3-5 ans" />
+
+        <RadioButton
+            android:id="@+id/radioButtonScience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Planet Science" />
+
+        <RadioButton
+            android:id="@+id/radioButtonArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budding artists" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFarmer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Urban farmer" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDanse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danse" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCircus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Circus performer" />
+
+        <RadioButton
+            android:id="@+id/radioButtonComic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comic Strip" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sport" />
+    </RadioGroup>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButtonRegistrationReturn"
         android:layout_width="wrap_content"
@@ -35,88 +99,14 @@
         app:srcCompat="@android:drawable/ic_menu_send"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <LinearLayout
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21">
-
-        <com.google.android.material.chip.ChipGroup
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="32dp">
-
-            <RadioButton
-                android:id="@+id/radioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RadioButton" />
-
-            <RadioButton
-                android:id="@+id/radioButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RadioButton" />
-
-            <RadioButton
-                android:id="@+id/radioButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RadioButton" />
-
-            <RadioButton
-                android:id="@+id/radioButton4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RadioButton" />
-
-            <RadioButton
-                android:id="@+id/radioButton5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RadioButton" />
-
-            <RadioButton
-                android:id="@+id/radioButton6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RadioButton" />
-
-            <RadioButton
-                android:id="@+id/radioButton7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RadioButton" />
-
-            <RadioButton
-                android:id="@+id/radioButton8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RadioButton" />
-
-            <RadioButton
-                android:id="@+id/radioButton9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="RadioButton" />
-
-        </com.google.android.material.chip.ChipGroup>
-    </LinearLayout>
-
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:text="Nom:"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <EditText
@@ -133,10 +123,10 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
         android:text="Tel:"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextParentName" />
 
     <EditText
@@ -153,10 +143,10 @@
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
         android:text="Email:"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextParentTel" />
 
     <EditText
@@ -184,20 +174,21 @@
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
         android:layout_marginTop="32dp"
         android:text="Program"
         android:textSize="24sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="62dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:text="Nom:"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <EditText
@@ -214,10 +205,10 @@
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
         android:text="Age:"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextChildName" />
 
     <EditText
