@@ -5,42 +5,34 @@
     <item
         android:id="@+id/minitigre"
         android:icon="@drawable/tiger"
-        android:title="MiniTigres 4-5 ans"
-        app:showAsAction="always" />
+        android:title="MiniTigres 4-5 ans" />
     <item
         android:id="@+id/science"
         android:icon="@drawable/sciences"
-        android:title="Science"
-        app:showAsAction="always" />
+        android:title="Science" />
     <item
         android:id="@+id/artist"
-        android:title="Budding artists"
-        app:showAsAction="ifRoom" />
+        android:title="Budding artists" />
     <item
         android:id="@+id/fermier"
         android:icon="@drawable/fermier"
-        android:title="Urban farmer"
-        app:showAsAction="ifRoom" />
+        android:title="Urban farmer" />
     <item
         android:id="@+id/dance"
         android:icon="@drawable/dance"
-        android:title="Danse"
-        app:showAsAction="ifRoom" />
+        android:title="Danse" />
     <item
         android:id="@+id/artistCirque"
         android:icon="@drawable/cirque"
-        android:title="Circus performer"
-        app:showAsAction="ifRoom" />
+        android:title="Circus performer" />
     <item
         android:id="@+id/comicStrip"
         android:icon="@drawable/dessin"
-        android:title="Comic strip"
-        app:showAsAction="ifRoom" />
+        android:title="Comic strip" />
     <item
         android:id="@+id/music"
         android:icon="@drawable/music"
-        android:title="Music"
-        app:showAsAction="ifRoom" />
+        android:title="Music" />
     <item
         android:id="@+id/sport"
         android:icon="@drawable/sport"

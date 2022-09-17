@@ -31,14 +31,12 @@ public class HelpActivity extends AppCompatActivity {
         int option = item.getItemId();
         switch (option){
             case R.id.envoyer:
-                // todo: validation input data
-                // todo: envoyer email
-                Toast.makeText(HelpActivity.this, "to Message est envoyé", Toast.LENGTH_SHORT).show();
+                onEnoyer(null);
                 break;
             case R.id.retour:
-                Toast.makeText(HelpActivity.this, "to retour activity main", Toast.LENGTH_SHORT).show();
-                returnIntent = new Intent(HelpActivity.this, MainActivity.class);
-                startActivity(returnIntent);
+//                returnIntent = new Intent(HelpActivity.this, MainActivity.class);
+//                startActivity(returnIntent);
+                onFloatRetour(null);
                 break;
 
             default:
@@ -48,12 +46,17 @@ public class HelpActivity extends AppCompatActivity {
     }
 
 
+    // action float buttion retour
     public void onFloatRetour(View view) {
         returnIntent = new Intent(HelpActivity.this, MainActivity.class);
         startActivity(returnIntent);
+        Toast.makeText(HelpActivity.this, "to retour activity main", Toast.LENGTH_SHORT).show();
     }
 
+    // action float buttion envoyer
     public void onEnoyer(View view) {
+        // todo: validation input data
+        // todo: envoyer email
         Toast.makeText(HelpActivity.this, "Message est envoyé", Toast.LENGTH_SHORT).show();
     }
 }

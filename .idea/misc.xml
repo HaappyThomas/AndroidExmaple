@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ACE/A17Mobile/Tp/AndroidExmaple/app/src/main/res/layout/activity_help.xml" value="0.5456410256410257" />
+        <entry key="..\:/ACE/A17Mobile/Tp/AndroidExmaple/app/src/main/res/layout/activity_information.xml" value="0.5456410256410257" />
+        <entry key="..\:/ACE/A17Mobile/Tp/AndroidExmaple/app/src/main/res/layout/activity_main.xml" value="0.5456410256410257" />
+        <entry key="..\:/ACE/A17Mobile/Tp/AndroidExmaple/app/src/main/res/layout/activity_program.xml" value="0.5456410256410257" />
+        <entry key="..\:/ACE/A17Mobile/Tp/AndroidExmaple/app/src/main/res/layout/activity_registration.xml" value="0.5456410256410257" />
+        <entry key="..\:/ACE/A17Mobile/Tp/AndroidExmaple/app/src/main/res/menu/help.xml" value="0.5456410256410257" />
+        <entry key="..\:/ACE/A17Mobile/Tp/AndroidExmaple/app/src/main/res/menu/information.xml" value="0.5456410256410257" />
+        <entry key="..\:/ACE/A17Mobile/Tp/AndroidExmaple/app/src/main/res/menu/main.xml" value="0.5456410256410257" />
+        <entry key="..\:/ACE/A17Mobile/Tp/AndroidExmaple/app/src/main/res/menu/program.xml" value="0.5456410256410257" />
+        <entry key="..\:/ACE/A17Mobile/Tp/AndroidExmaple/app/src/main/res/menu/registrattion.xml" value="0.5536458333333333" />
         <entry key="..\:/ACE/A17Mobile/TpCampEte/app/src/main/res/drawable-es-rES/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/ACE/A17Mobile/TpCampEte/app/src/main/res/drawable-fr-rCAv24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/ACE/A17Mobile/TpCampEte/app/src/main/res/drawable-fr-rFRv24/ic_launcher_foreground.xml" value="0.1" />

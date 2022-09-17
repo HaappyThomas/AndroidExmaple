@@ -29,9 +29,9 @@ public class InformationActivity extends AppCompatActivity {
         int option = item.getItemId();
         switch (option){
             case R.id.retour:
-                Toast.makeText(InformationActivity.this, "to retour activity main", Toast.LENGTH_LONG).show();
-                returnIntent = new Intent(InformationActivity.this, MainActivity.class);
-                startActivity(returnIntent);
+//                returnIntent = new Intent(InformationActivity.this, MainActivity.class);
+//                startActivity(returnIntent);
+                onFloatRetour(null);
                 break;
         }
         return super.onOptionsItemSelected(item);
@@ -40,5 +40,6 @@ public class InformationActivity extends AppCompatActivity {
     public void onFloatRetour(View view) {
         returnIntent = new Intent(InformationActivity.this, MainActivity.class);
         startActivity(returnIntent);
+        Toast.makeText(InformationActivity.this, "to retour activity main", Toast.LENGTH_LONG).show();
     }
 }

@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 helpIntent = new Intent(MainActivity.this, HelpActivity.class);
                 startActivity(helpIntent);
                 break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + option);
         }
         return super.onOptionsItemSelected(item);
     }

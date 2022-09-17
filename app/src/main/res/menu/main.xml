@@ -6,23 +6,20 @@
         android:id="@+id/program"
         android:icon="@drawable/program"
         android:title="Program"
-        android:titleCondensed="PRO"
-        app:showAsAction="ifRoom" />
+        android:titleCondensed="PRO" />
     <item
         android:id="@+id/infomation"
         android:icon="@drawable/favicon"
         android:title="Infomation"
-        android:titleCondensed="INF"
-        app:showAsAction="ifRoom" />
+        android:titleCondensed="INF" />
     <item
         android:id="@+id/registration"
         android:icon="@drawable/inscription"
         android:title="Registration"
-        android:titleCondensed="REG"
-        app:showAsAction="ifRoom" />
+        android:titleCondensed="REG" />
     <item
         android:id="@+id/help"
         android:icon="@drawable/help"
         android:title="Help"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 </menu>
