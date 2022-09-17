@@ -8,14 +8,27 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.tpcampete.entity.Message;
 
 public class HelpActivity extends AppCompatActivity {
     private Intent returnIntent;
+    private EditText editTextNom, editTextEmail, editTextMessage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
+
+        setWidgets();
+    }
+
+    private void setWidgets() {
+        editTextNom = findViewById(R.id.editTextPersonName);
+        editTextEmail = findViewById(R.id.editTextPersonEmail);
+        editTextMessage = findViewById(R.id.editTextMessage);
     }
 
     // ajouter top menu
@@ -34,8 +47,6 @@ public class HelpActivity extends AppCompatActivity {
                 onEnoyer(null);
                 break;
             case R.id.retour:
-//                returnIntent = new Intent(HelpActivity.this, MainActivity.class);
-//                startActivity(returnIntent);
                 onFloatRetour(null);
                 break;
 
@@ -44,7 +55,6 @@ public class HelpActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 
     // action float buttion retour
     public void onFloatRetour(View view) {
@@ -56,7 +66,23 @@ public class HelpActivity extends AppCompatActivity {
     // action float buttion envoyer
     public void onEnoyer(View view) {
         // todo: validation input data
-        // todo: envoyer email
-        Toast.makeText(HelpActivity.this, "Message est envoyé", Toast.LENGTH_SHORT).show();
+
+        // create entity and send to server
+        Message message = new Message();
+        message.setNom(editTextNom.getText().toString());
+        message.setEmail(editTextEmail.getText().toString());
+        message.setMessage(editTextMessage.getText().toString());
+        sendMessage(message);
+    }
+
+    private void sendMessage(Message message) {
+        // todo: send to server
+
+        // clean input data
+        editTextNom.setText("");
+        editTextEmail.setText("");
+        editTextMessage.setText("");
+
+        Toast.makeText(HelpActivity.this, "Message est envoyé:\n" + message.toString(), Toast.LENGTH_SHORT).show();
     }
 }
