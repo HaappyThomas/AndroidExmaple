@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class ProgramActivity extends AppCompatActivity {
@@ -36,41 +37,118 @@ public class ProgramActivity extends AppCompatActivity {
         int option = item.getItemId();
         switch (option){
             case R.id.minitigre:
-                Toast.makeText(ProgramActivity.this, "to miniTigres program", Toast.LENGTH_LONG).show();
+                onMiniTigre(null);
                 break;
             case R.id.science:
-                Toast.makeText(ProgramActivity.this, "to science program", Toast.LENGTH_LONG).show();
+                onScience(null);
                 break;
             case R.id.artist:
-                Toast.makeText(ProgramActivity.this, "to artist program", Toast.LENGTH_LONG).show();
+                onArtist(null);
                 break;
             case R.id.fermier:
-                Toast.makeText(ProgramActivity.this, "to fermier program", Toast.LENGTH_LONG).show();
+                onFarmer(null);
                 break;
             case R.id.dance:
-                Toast.makeText(ProgramActivity.this, "to dance program", Toast.LENGTH_LONG).show();
+                onDanse(null);
                 break;
             case R.id.artistCirque:
-                Toast.makeText(ProgramActivity.this, "to artistCirque program", Toast.LENGTH_LONG).show();
+                onCircus(null);
                 break;
             case R.id.comicStrip:
-                Toast.makeText(ProgramActivity.this, "to comicStrip program", Toast.LENGTH_LONG).show();
+                onComic(null);
                 break;
             case R.id.music:
-                Toast.makeText(ProgramActivity.this, "to music program", Toast.LENGTH_LONG).show();
+                onMusic(null);
                 break;
             case R.id.sport:
-                Toast.makeText(ProgramActivity.this, "to sport program", Toast.LENGTH_LONG).show();
+                onSport(null);
                 break;
             case R.id.retour:
-                Toast.makeText(ProgramActivity.this, "to retour activity main", Toast.LENGTH_LONG).show();
-                returnIntent = new Intent(ProgramActivity.this, MainActivity.class);
-                startActivity(returnIntent);
+                onFloatRetour(null);
                 break;
 
             default:
                 throw new IllegalStateException("Unexpected value: " + option);
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    // action image button
+    public void onMiniTigre(View view) {
+        Intent minitigreIntent = new Intent(ProgramActivity.this, RegistrationActivity.class);
+        minitigreIntent.putExtra("program", "miniTigre");
+        startActivity(minitigreIntent);
+
+        Toast.makeText(ProgramActivity.this, "to miniTigres program", Toast.LENGTH_LONG).show();
+    }
+
+    public void onScience(View view) {
+        Intent scienceIntent = new Intent(ProgramActivity.this, RegistrationActivity.class);
+        scienceIntent.putExtra("program", "science");
+        startActivity(scienceIntent);
+
+        Toast.makeText(ProgramActivity.this, "to science program", Toast.LENGTH_LONG).show();
+    }
+
+    public void onArtist(View view) {
+        Intent artistIntent = new Intent(ProgramActivity.this, RegistrationActivity.class);
+        artistIntent.putExtra("program", "artist");
+        startActivity(artistIntent);
+
+        Toast.makeText(ProgramActivity.this, "to artist program", Toast.LENGTH_LONG).show();
+    }
+
+    public void onFarmer(View view) {
+        Intent farmerIntent = new Intent(ProgramActivity.this, RegistrationActivity.class);
+        farmerIntent.putExtra("program", "farmer");
+        startActivity(farmerIntent);
+
+        Toast.makeText(ProgramActivity.this, "to fermier program", Toast.LENGTH_LONG).show();
+    }
+
+    public void onDanse(View view) {
+        Intent danseIntent = new Intent(ProgramActivity.this, RegistrationActivity.class);
+        danseIntent.putExtra("program", "danse");
+        startActivity(danseIntent);
+
+        Toast.makeText(ProgramActivity.this, "to dance program", Toast.LENGTH_LONG).show();
+    }
+
+    public void onCircus(View view) {
+        Intent circusIntent = new Intent(ProgramActivity.this, RegistrationActivity.class);
+        circusIntent.putExtra("program", "circus");
+        startActivity(circusIntent);
+
+        Toast.makeText(ProgramActivity.this, "to artistCirque program", Toast.LENGTH_LONG).show();
+    }
+
+    public void onComic(View view) {
+        Intent comicIntent = new Intent(ProgramActivity.this, RegistrationActivity.class);
+        comicIntent.putExtra("program", "comic");
+        startActivity(comicIntent);
+
+        Toast.makeText(ProgramActivity.this, "to comicStrip program", Toast.LENGTH_LONG).show();
+    }
+
+    public void onMusic(View view) {
+        Intent musicIntent= new Intent(ProgramActivity.this, RegistrationActivity.class);
+        musicIntent.putExtra("program", "music");
+        startActivity(musicIntent);
+
+        Toast.makeText(ProgramActivity.this, "to music program", Toast.LENGTH_LONG).show();
+    }
+
+    public void onSport(View view) {
+        Intent sportIntent = new Intent(ProgramActivity.this, RegistrationActivity.class);
+        sportIntent.putExtra("program", "sport");
+        startActivity(sportIntent);
+
+        Toast.makeText(ProgramActivity.this, "to sport program", Toast.LENGTH_LONG).show();
+    }
+
+    public void onFloatRetour(View view) {
+        Toast.makeText(ProgramActivity.this, "to retour activity main", Toast.LENGTH_LONG).show();
+        returnIntent = new Intent(ProgramActivity.this, MainActivity.class);
+        startActivity(returnIntent);
     }
 }
