@@ -32,7 +32,7 @@ public class RegistrationActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int option = item.getItemId();
         switch (option){
-            case R.id.envoyer:
+            case R.id.ajouter:
                 onEnvoyer(null);
                 Toast.makeText(RegistrationActivity.this, "to Message est envoyé", Toast.LENGTH_SHORT).show();
                 break;

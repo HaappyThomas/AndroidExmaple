@@ -8,7 +8,7 @@
         android:title="Return"
         app:showAsAction="always" />
     <item
-        android:id="@+id/envoyer"
+        android:id="@+id/ajouter"
         android:icon="@android:drawable/ic_menu_send"
         android:title="Envoyer"
         app:showAsAction="always" />

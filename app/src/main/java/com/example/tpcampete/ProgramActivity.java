@@ -75,7 +75,7 @@ public class ProgramActivity extends AppCompatActivity {
 
     // action image button
     public void onMiniTigre(View view) {
-        Intent minitigreIntent = new Intent(ProgramActivity.this, RegistrationActivity.class);
+        Intent minitigreIntent = new Intent(ProgramActivity.this, DescriptionProgramActivity.class);
         minitigreIntent.putExtra("program", "miniTigre");
         startActivity(minitigreIntent);
 
@@ -83,7 +83,7 @@ public class ProgramActivity extends AppCompatActivity {
     }
 
     public void onScience(View view) {
-        Intent scienceIntent = new Intent(ProgramActivity.this, RegistrationActivity.class);
+        Intent scienceIntent = new Intent(ProgramActivity.this, DescriptionProgramActivity.class);
         scienceIntent.putExtra("program", "science");
         startActivity(scienceIntent);
 
@@ -91,7 +91,7 @@ public class ProgramActivity extends AppCompatActivity {
     }
 
     public void onArtist(View view) {
-        Intent artistIntent = new Intent(ProgramActivity.this, RegistrationActivity.class);
+        Intent artistIntent = new Intent(ProgramActivity.this, DescriptionProgramActivity.class);
         artistIntent.putExtra("program", "artist");
         startActivity(artistIntent);
 
@@ -99,7 +99,7 @@ public class ProgramActivity extends AppCompatActivity {
     }
 
     public void onFarmer(View view) {
-        Intent farmerIntent = new Intent(ProgramActivity.this, RegistrationActivity.class);
+        Intent farmerIntent = new Intent(ProgramActivity.this, DescriptionProgramActivity.class);
         farmerIntent.putExtra("program", "farmer");
         startActivity(farmerIntent);
 
@@ -107,7 +107,7 @@ public class ProgramActivity extends AppCompatActivity {
     }
 
     public void onDanse(View view) {
-        Intent danseIntent = new Intent(ProgramActivity.this, RegistrationActivity.class);
+        Intent danseIntent = new Intent(ProgramActivity.this, DescriptionProgramActivity.class);
         danseIntent.putExtra("program", "danse");
         startActivity(danseIntent);
 
@@ -115,7 +115,7 @@ public class ProgramActivity extends AppCompatActivity {
     }
 
     public void onCircus(View view) {
-        Intent circusIntent = new Intent(ProgramActivity.this, RegistrationActivity.class);
+        Intent circusIntent = new Intent(ProgramActivity.this, DescriptionProgramActivity.class);
         circusIntent.putExtra("program", "circus");
         startActivity(circusIntent);
 
@@ -123,7 +123,7 @@ public class ProgramActivity extends AppCompatActivity {
     }
 
     public void onComic(View view) {
-        Intent comicIntent = new Intent(ProgramActivity.this, RegistrationActivity.class);
+        Intent comicIntent = new Intent(ProgramActivity.this, DescriptionProgramActivity.class);
         comicIntent.putExtra("program", "comic");
         startActivity(comicIntent);
 
@@ -131,7 +131,7 @@ public class ProgramActivity extends AppCompatActivity {
     }
 
     public void onMusic(View view) {
-        Intent musicIntent= new Intent(ProgramActivity.this, RegistrationActivity.class);
+        Intent musicIntent= new Intent(ProgramActivity.this, DescriptionProgramActivity.class);
         musicIntent.putExtra("program", "music");
         startActivity(musicIntent);
 
@@ -139,7 +139,7 @@ public class ProgramActivity extends AppCompatActivity {
     }
 
     public void onSport(View view) {
-        Intent sportIntent = new Intent(ProgramActivity.this, RegistrationActivity.class);
+        Intent sportIntent = new Intent(ProgramActivity.this, DescriptionProgramActivity.class);
         sportIntent.putExtra("program", "sport");
         startActivity(sportIntent);
 

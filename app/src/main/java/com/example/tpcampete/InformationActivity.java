@@ -18,12 +18,13 @@ public class InformationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_information);
     }
 
+    // ajouter top menu
     @Override
     public boolean onCreateOptionsMenu(@NonNull Menu menu) {
         getMenuInflater().inflate(R.menu.information, menu);
         return super.onCreateOptionsMenu(menu);
     }
-
+    // action les option top menu
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int option = item.getItemId();

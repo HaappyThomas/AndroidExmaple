@@ -30,7 +30,7 @@ public class HelpActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int option = item.getItemId();
         switch (option){
-            case R.id.envoyer:
+            case R.id.ajouter:
                 onEnoyer(null);
                 break;
             case R.id.retour:
