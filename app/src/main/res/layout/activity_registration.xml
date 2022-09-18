@@ -19,55 +19,55 @@
             android:id="@+id/radioButtonMiniTiger"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MiniTigres 3-5 ans" />
+            android:text="@string/registration_mini_tiger" />
 
         <RadioButton
             android:id="@+id/radioButtonScience"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Planet Science" />
+            android:text="@string/registration_planet_science" />
 
         <RadioButton
             android:id="@+id/radioButtonArtist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Budding artists" />
+            android:text="@string/registration_budding_artists" />
 
         <RadioButton
             android:id="@+id/radioButtonFarmer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Urban farmer" />
+            android:text="@string/registration_urban_farmer" />
 
         <RadioButton
             android:id="@+id/radioButtonDanse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Danse" />
+            android:text="@string/registration_dance" />
 
         <RadioButton
             android:id="@+id/radioButtonCircus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Circus performer" />
+            android:text="@string/registration_circus_performer" />
 
         <RadioButton
             android:id="@+id/radioButtonComic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Comic Strip" />
+            android:text="@string/registration_comic_strip" />
 
         <RadioButton
             android:id="@+id/radioButtonMusic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Music" />
+            android:text="@string/registration_music" />
 
         <RadioButton
             android:id="@+id/radioButtonSport"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sport" />
+            android:text="@string/registration_sport" />
     </RadioGroup>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -105,7 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
         android:layout_marginTop="16dp"
-        android:text="Nom:"
+        android:text="@string/registration_nom"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
@@ -125,7 +125,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
         android:layout_marginTop="8dp"
-        android:text="Tel:"
+        android:text="@string/registration_tel"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextParentName" />
 
@@ -145,7 +145,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
         android:layout_marginTop="8dp"
-        android:text="Email:"
+        android:text="@string/registration_email"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextParentTel" />
 
@@ -165,7 +165,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="100dp"
-        android:text="Parent"
+        android:text="@string/registration_parent"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -176,7 +176,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="62dp"
         android:layout_marginTop="32dp"
-        android:text="Program"
+        android:text="@string/registration_program"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -187,7 +187,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
         android:layout_marginTop="16dp"
-        android:text="Nom:"
+        android:text="@string/registration_child_name"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
@@ -207,7 +207,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
         android:layout_marginTop="8dp"
-        android:text="Age:"
+        android:text="@string/registration_age"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextChildName" />
 
@@ -227,7 +227,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="100dp"
-        android:text="Child"
+        android:text="@string/registration_child"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextParentEmail" />

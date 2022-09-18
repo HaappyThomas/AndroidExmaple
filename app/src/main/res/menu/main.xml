@@ -5,21 +5,21 @@
     <item
         android:id="@+id/program"
         android:icon="@drawable/program"
-        android:title="Program"
+        android:title="@string/menu_main_program"
         android:titleCondensed="PRO" />
     <item
         android:id="@+id/infomation"
         android:icon="@drawable/favicon"
-        android:title="Infomation"
+        android:title="@string/menu_main_infomation"
         android:titleCondensed="INF" />
     <item
         android:id="@+id/registration"
         android:icon="@drawable/inscription"
-        android:title="Registration"
+        android:title="@string/menu_main_registration"
         android:titleCondensed="REG" />
     <item
         android:id="@+id/help"
         android:icon="@drawable/help"
-        android:title="Help"
+        android:title="@string/menu_main_help"
         app:showAsAction="always" />
 </menu>

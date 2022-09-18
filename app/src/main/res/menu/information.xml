@@ -5,6 +5,6 @@
     <item
         android:id="@+id/retour"
         android:icon="@android:drawable/ic_menu_revert"
-        android:title="Return"
+        android:title="@string/menu_info_return"
         app:showAsAction="always" />
 </menu>

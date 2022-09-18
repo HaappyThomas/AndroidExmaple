@@ -5,41 +5,41 @@
     <item
         android:id="@+id/minitigre"
         android:icon="@drawable/tiger"
-        android:title="MiniTigres 4-5 ans" />
+        android:title="@string/menu_program_minitigres" />
     <item
         android:id="@+id/science"
         android:icon="@drawable/sciences"
-        android:title="Science" />
+        android:title="@string/menu_program_science" />
     <item
         android:id="@+id/artist"
-        android:title="Budding artists" />
+        android:title="@string/menu_program_budding_artists" />
     <item
         android:id="@+id/fermier"
         android:icon="@drawable/fermier"
-        android:title="Urban farmer" />
+        android:title="@string/menu_program_urban_farmer" />
     <item
         android:id="@+id/dance"
         android:icon="@drawable/dance"
-        android:title="Danse" />
+        android:title="@string/menu_program_dance" />
     <item
         android:id="@+id/artistCirque"
         android:icon="@drawable/cirque"
-        android:title="Circus performer" />
+        android:title="@string/menu_program_circus_performer" />
     <item
         android:id="@+id/comicStrip"
         android:icon="@drawable/dessin"
-        android:title="Comic strip" />
+        android:title="@string/menu_program_comic_strip" />
     <item
         android:id="@+id/music"
         android:icon="@drawable/music"
-        android:title="Music" />
+        android:title="@string/menu_program_music" />
     <item
         android:id="@+id/sport"
         android:icon="@drawable/sport"
-        android:title="Sport" />
+        android:title="@string/menu_program_sport" />
     <item
         android:id="@+id/retour"
         android:icon="@android:drawable/ic_menu_revert"
-        android:title="Return"
+        android:title="@string/menu_program_return"
         app:showAsAction="always" />
 </menu>

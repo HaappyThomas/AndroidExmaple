@@ -45,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="111dp"
         android:layout_marginTop="1dp"
-        android:text="Bienvenue sur notre page de programmes ! En s'appuyant sur les forces du collège André-Grasset, le camp de jour vous propose un éventail d'activités pour tous de 4 à 12 ans, selon les intérêts de chacun. Chez nous vos enfants pourront développer leur curiosité scientifique et technologique, leur fibre artistique, et leur talent sportif et se faire de nouveaux amis !!"
+        android:text="@string/main_desc"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

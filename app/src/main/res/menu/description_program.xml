@@ -5,11 +5,11 @@
     <item
         android:id="@+id/retour"
         android:icon="@android:drawable/ic_menu_revert"
-        android:title="Return"
+        android:title="@string/menu_desc_return"
         app:showAsAction="always" />
     <item
         android:id="@+id/ajouter"
         android:icon="@android:drawable/ic_input_add"
-        android:title="Ajouter"
+        android:title="@string/menu_desc_ajouter"
         app:showAsAction="always" />
 </menu>
