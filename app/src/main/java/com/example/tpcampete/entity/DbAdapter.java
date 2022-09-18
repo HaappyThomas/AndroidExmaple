@@ -59,8 +59,10 @@ public class DbAdapter {
         description.append(":\n");
         // indiquer les colonnes du select
         String[] colonnes = {DescriptionProgramDbHelper.COL_DESC};
+        // select description from tb_desc where nom like programName
         Cursor cursor = database.query(DescriptionProgramDbHelper.TABLE_DESC,
-                colonnes, null, null, null, null, null);
+                colonnes, DescriptionProgramDbHelper.COL_NAME + " = " + "'" + programName + "'",
+                null, null, null, null);
         cursor.moveToFirst();
         if(!cursor.isAfterLast()){
             // add description into description string
