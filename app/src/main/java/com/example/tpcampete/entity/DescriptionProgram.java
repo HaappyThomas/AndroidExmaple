@@ -1,6 +1,7 @@
 package com.example.tpcampete.entity;
 
 public class DescriptionProgram {
+    private Integer idProgram;
     private String nomProgram;
     private String descriptionProgram;
 
@@ -27,6 +28,10 @@ public class DescriptionProgram {
 
     public void setDescriptionProgram(String descriptionProgram) {
         this.descriptionProgram = descriptionProgram;
+    }
+
+    public Integer getIdProgram() {
+        return idProgram;
     }
 
     @Override

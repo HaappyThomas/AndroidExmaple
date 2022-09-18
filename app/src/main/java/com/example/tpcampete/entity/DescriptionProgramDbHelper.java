@@ -20,8 +20,8 @@ public class DescriptionProgramDbHelper extends SQLiteOpenHelper {
     public static final String COL_DESC = "description";
 
     // sql for create table
-    public static final String DDL_CREATE_TABLE = "create table" + TABLE_DESC + "("
-            + COL_ID + " integer primary key autoincreament, "
+    public static final String DDL_CREATE_TABLE = "create table " + TABLE_DESC + "("
+            + COL_ID + " integer primary key autoincrement, "
             + COL_NAME + " TEXT, "
             + COL_DESC + " TEXT)";
 
