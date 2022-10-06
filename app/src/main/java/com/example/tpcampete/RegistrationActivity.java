@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.tpcampete.entity.Registration;
@@ -24,6 +25,7 @@ public class RegistrationActivity extends AppCompatActivity {
             radioButtonComic, radioButtonMusic, radioButtonSport;
     private EditText editTextParentName, editTextParentTel, editTextParentEmail,
             editTextChildName, editTextChildAge;
+    private TextView textViewProgramme;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,8 @@ public class RegistrationActivity extends AppCompatActivity {
         editTextParentEmail = findViewById(R.id.editTextTextParentEmail);
         editTextChildName = findViewById(R.id.editTextTextChildName);
         editTextChildAge = findViewById(R.id.editTextTextChildAge);
+
+        textViewProgramme = findViewById(R.id.textViewProgramme);
 
         radioGroup = findViewById(R.id.radioGroup);
         radioButtonMiniTiger = findViewById(R.id.radioButtonMiniTiger);
@@ -87,22 +91,59 @@ public class RegistrationActivity extends AppCompatActivity {
 
     // action float buttion envoyer
     public void onEnvoyer(View view) {
-        // todo: validation input data
-        // create VO and send to server
-        Registration registration = new Registration();
-        registration.setParentName(editTextParentName.getText().toString());
-        registration.setParentTel(editTextParentTel.getText().toString());
-        registration.setParentEmail(editTextParentEmail.getText().toString());
-        registration.setChildName(editTextChildName.getText().toString());
-        registration.setChildAge(editTextChildAge.getText().toString());
-        registration.setProgramId(radioGroup.getCheckedRadioButtonId());
-        // send registration to server
-        sendRegistration(registration);
+        // verifier les donnees saisies
+        boolean isAllFieldsChecked = checkAllFields();
+        if(isAllFieldsChecked){
+            // create VO and send to server
+            Registration registration = new Registration();
+            registration.setParentName(editTextParentName.getText().toString());
+            registration.setParentTel(editTextParentTel.getText().toString());
+            registration.setParentEmail(editTextParentEmail.getText().toString());
+            registration.setChildName(editTextChildName.getText().toString());
+            registration.setChildAge(editTextChildAge.getText().toString());
+            registration.setProgramId(radioGroup.getCheckedRadioButtonId());
+            // send registration to server
+            sendRegistration(registration);
+        }
+    }
+
+    private boolean checkAllFields() {
+        if(editTextParentName.getText().length() == 0){
+            editTextParentName.setError("Le nom du parent est requis");
+            return false;
+        }
+        if(editTextParentTel.getText().length() == 0){
+            editTextParentTel.setError("Le telephone du parent est requis");
+            return false;
+        }
+        if(editTextParentEmail.getText().length() == 0){
+            editTextParentEmail.setError("L'email du parent est requis");
+            return false;
+        }
+        if(editTextChildName.getText().length() == 0){
+            editTextChildName.setError("Le nom de l'enfant est requis");
+            return false;
+        }
+        if(editTextChildAge.getText().length() == 0){
+            editTextChildAge.setError("L'age de l'enfant est requis");
+            return false;
+        }
+        if(radioGroup.getCheckedRadioButtonId() == -1){
+            textViewProgramme.setFocusableInTouchMode(true);
+            textViewProgramme.requestFocus();
+            textViewProgramme.setError("La programme à s'inscrir est requis");
+            return false;
+        }
+
+
+        return true;
     }
 
     // method sendRegistration
     private void sendRegistration(Registration registration) {
-        // todo: send to server
+        // send to server,
+        // ici la methode est juste simuler, parce qu'il y a pas de serveur de web
+
 
         // clean input data
         editTextParentName.setText("");
@@ -111,6 +152,7 @@ public class RegistrationActivity extends AppCompatActivity {
         editTextChildName.setText("");
         editTextChildAge.setText("");
         radioGroup.clearCheck();
+        textViewProgramme.setError(null);
 
         Toast.makeText(RegistrationActivity.this, "Registration success: \n" + registration.toString(), Toast.LENGTH_SHORT).show();
     }
