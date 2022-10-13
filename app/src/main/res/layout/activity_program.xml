@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgramActivity">
+
+    <ImageButton
+        android:id="@+id/imageButtonMinitiger"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="14dp"
+        android:contentDescription="mini tiger 3-5 ans"
+        android:onClick="onMiniTigre"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonScience"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tiger" />
+
+    <ImageButton
+        android:id="@+id/imageButtonScience"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="Planet science"
+        android:onClick="onScience"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonArtist"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonMinitiger"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sciences" />
+
+    <ImageButton
+        android:id="@+id/imageButtonArtist"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="Budding artist"
+        android:onClick="onArtist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonScience"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/artist" />
+
+    <ImageButton
+        android:id="@+id/imageButtonFamar"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="14dp"
+        android:contentDescription="Urban farmer"
+        android:onClick="onFarmer"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonDance"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonMinitiger"
+        app:srcCompat="@drawable/fermier" />
+
+    <ImageButton
+        android:id="@+id/imageButtonDance"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="Dance"
+        android:onClick="onDanse"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonCircus"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonFamar"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonScience"
+        app:srcCompat="@drawable/dance" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCircus"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="Circus performer"
+        android:onClick="onCircus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonDance"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonArtist"
+        app:srcCompat="@drawable/cirque" />
+
+    <ImageButton
+        android:id="@+id/imageButtonStrip"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="14dp"
+        android:contentDescription="Comic"
+        android:onClick="onComic"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonMusic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonFamar"
+        app:srcCompat="@drawable/dessin" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMusic"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="Music"
+        android:onClick="onMusic"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonSport"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonStrip"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonDance"
+        app:srcCompat="@drawable/music" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSport"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="Sport"
+        android:onClick="onSport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonMusic"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonCircus"
+        app:srcCompat="@drawable/sport" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonRetour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="339dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="9dp"
+        android:clickable="true"
+        android:contentDescription="Return"
+        android:onClick="onFloatRetour"
+        app:backgroundTint="#60BAE3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+</androidx.constraintlayout.widget.ConstraintLayout>
