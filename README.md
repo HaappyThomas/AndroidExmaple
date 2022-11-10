@@ -1,4 +1,4 @@
-# o	Application de commande de camp d’été sur smartphone Android
+# Application de commande de camp d’été sur smartphone Android
 
 # Technologies:
 - Plateforme Android
